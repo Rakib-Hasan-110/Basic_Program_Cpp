@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+int marks(int a){
+    if(a>= 80){
+        cout<< "A+"<<endl;
+    }
+     else if(a>= 70){
+        cout<< "B+"<<endl;
+    }
+     else if(a>= 60){
+        cout<< "C+"<<endl;
+    }
+     else if(a < 60){
+        cout<< "Fail"<<endl;
+    }
+     else{
+        cout<< "Not a number!."<<endl;
+    }
+}
+
+int main(){
+
+    int num;
+    cout<< "Enter the mark : "<<endl;
+    cin>> num;
+    int Result = marks(num);
+    return 0;
+
+}
